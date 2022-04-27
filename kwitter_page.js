@@ -54,7 +54,7 @@ function getData() {
                         like_button = "<button class='btn btn-warning' id=" + firebase_message_id + " value=" + like + " onclick='updateLike(this.id)'>";
                         span_with_tag = "<span class='glyphicon glyphicon-thumbs-up'>Like: " + like + "</span></button><hr>";
                         row = name_with_tag + message_with_tag + like_button + span_with_tag;
-                        document.getElementById("output").innerHTML = row;
+                        document.getElementById("output").innerHTML += row;
 
                         //End code
 
